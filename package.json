@@ -1,0 +1,14 @@
+{
+    "name": "smart-campus-services-portal",
+    "version": "1.0.0",
+    "description": "A portal for smart campus services",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd backend && node index.js",
+        "client": "cd frontend && set PORT=3001 && npm start",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
